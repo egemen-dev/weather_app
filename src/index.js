@@ -1,13 +1,13 @@
-import _ from 'lodash';
+import _ from "lodash";
+import "./style.css";
+import search from "./logic/search";
 
+function component() {
+  const element = document.createElement("div");
 
- function component() {
-   const element = document.createElement('div');
+  search();
 
-  // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  return element;
+}
 
-   return element;
- }
-
- document.body.appendChild(component());
+document.body.appendChild(component());
