@@ -1,0 +1,32 @@
+{
+  "weatherSymbols": {
+    "0": "sun",
+    "1": "sun",
+    "2": "cloud-sun",
+    "3": "cloud",
+    "45": "cloud",
+    "48": "cloud",
+    "51": "umbrella",
+    "53": "umbrella",
+    "55": "umbrella",
+    "56": "umbrella",
+    "57": "umbrella",
+    "61": "umbrella",
+    "63": "umbrella",
+    "65": "umbrella",
+    "66": "umbrella",
+    "67": "umbrella",
+    "71": "snowflake",
+    "73": "snowflake",
+    "75": "snowflake",
+    "77": "snowflake",
+    "80": "umbrella",
+    "81": "umbrella",
+    "82": "umbrella",
+    "85": "snowflake",
+    "86": "snowflake",
+    "95": "bolt",
+    "96": "bolt",
+    "99": "bolt"
+  }
+}
