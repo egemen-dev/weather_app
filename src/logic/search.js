@@ -1,6 +1,7 @@
 import cities from "../data/cities.json";
 import capitalize from "../stingFunctions/capitalize";
 import fetchResults from "../logic/fetchResults";
+import displayResults from "../logic/displayResults";
 
 export default function Search() {
   let searchBar = document.getElementById("searchBar");
@@ -33,10 +34,12 @@ export default function Search() {
   });
 
   searchButton.addEventListener("click", () => {
-    let selectedCity = cities.filter((city) => {
+    let selectedCity = cities.find((city) => {
       return city.city.includes(capitalize(searchBar.value.split(",")[0]));
     });
 
-    console.log(fetchResults(selectedCity[0].lat, selectedCity[0].lng));
+    fetchResults(selectedCity.lat, selectedCity.lng).then((results) => {
+      displayResults(results);
+    });
   });
 }
