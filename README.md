@@ -8,4 +8,5 @@ It will use the OpenWeatherMap API to get the weather data and the free option o
 
 Sources:
 Weather data: https://open-meteo.com
-Cities data:  https://simplemaps.com/data/world-cities
+Cities data: https://simplemaps.com/data/world-cities
+Background image: https://unsplash.com/photos/t7EL2iG3jMc

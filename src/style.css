@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: url("./images/backgroundImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
 input:focus {
   outline: none;
 }
