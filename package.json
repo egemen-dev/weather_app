@@ -1,12 +1,17 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/egemen-dev/weather_app.git"
+  },
   "description": "",
   "private": true,
   "scripts": {
     "dev": "webpack server",
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +19,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.23",
     "postcss-loader": "^7.3.0",
     "postcss-preset-env": "^8.3.2",
