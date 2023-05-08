@@ -7,11 +7,9 @@ import "./style.css";
 import search from "./logic/search";
 
 function component() {
-  const element = document.createElement("div");
-
   search();
 
-  return element;
+  document.getElementById("container").style.display = "flex";
 }
 
 document.body.appendChild(component());
