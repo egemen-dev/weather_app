@@ -6,10 +6,5 @@ import _ from "lodash";
 import "./style.css";
 import search from "./logic/search";
 
-function component() {
-  search();
-
-  document.getElementById("container").style.display = "flex";
-}
-
-document.body.appendChild(component());
+search();
+document.getElementById("container").style.display = "flex";
