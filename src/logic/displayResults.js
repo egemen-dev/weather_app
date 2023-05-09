@@ -1,5 +1,6 @@
 import { weatherDescriptions } from "../data/weatherDescriptions.json";
 import { weatherSymbols } from "../data/weatherSymbols.json";
+import shortenDate from "../dateFormatFunctions/shortenDate";
 
 export default function displayResults(results) {
   const weatherList = document.getElementById("weatherList");
@@ -11,9 +12,9 @@ export default function displayResults(results) {
     weatherList.insertAdjacentHTML(
       "beforeend",
       `<div class="grid grid-cols-8 flex justify-around">
-      <div class="flex justify-center text-white font-light text-xs lg:text-xl lg:font-medium col-span-2 items-center">${
+      <div class="flex justify-center text-white font-light text-xs lg:text-xl lg:font-medium col-span-2 items-center">${shortenDate(
         weatherResults.time[index]
-      }</div>
+      )}</div>
       <div class="flex justify-center col-span-1 items-center">
         <i class="fa-solid fa-${
           weatherSymbols[weatherResults.weathercode[index]]
