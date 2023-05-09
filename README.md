@@ -1,6 +1,6 @@
 # Weather App
 
-<img src="https://user-images.githubusercontent.com/93445248/236848801-770ec7ce-0b78-4ab4-84ad-92e119355ce3.gif" width="90%"/>
+![updatedWeather](https://user-images.githubusercontent.com/93445248/237062379-86487aba-49c4-4283-b124-92494694bf66.gif)
 
 
 The Weather App is a modern and user-friendly application developed using Webpack, Tailwind CSS, JavaScript, and HTML. It seamlessly retrieves real-time weather data from an API and elegantly presents it to the user.
