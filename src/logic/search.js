@@ -35,6 +35,8 @@ export default function Search() {
 
     let selectedCity = getSearchBarInput(cities, searchBar);
 
+    if (selectedCity === undefined) return;
+
     fetchResults(selectedCity.lat, selectedCity.lng).then((results) => {
       displayResults(results);
     });
@@ -44,6 +46,8 @@ export default function Search() {
 
   searchButton.addEventListener("click", () => {
     let selectedCity = getSearchBarInput(cities, searchBar);
+
+    if (selectedCity === undefined) return;
 
     fetchResults(selectedCity.lat, selectedCity.lng).then((results) => {
       displayResults(results);
